@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  firstwebapi.lesson:
+    image: ${DOCKER_REGISTRY-}firstwebapilesson
+    build:
+      context: .
+      dockerfile: FirstWebApi.Lesson/Dockerfile
